@@ -1,0 +1,95 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CarProject.UI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CarProject</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form asp-controller="Car" asp-action="POST" method="post">
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+
+                        <ul class="navbar-nav flex-grow-1 " >
+
+                            <li class="nav-item ">
+                                Color :
+                                <br />
+                                <select name="Color" id="color">
+                                    <option value=" ">Choose</option>
+                                    <option value="black">Black</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="brown">Brown</option>
+                                    <option value="gold">Gold</option>
+                                    <option value="grey">Grey</option>
+                                    <option value="green">Green</option>
+                                    <option value="orange">Orange</option>
+                                    <option value="green">Green</option>
+                                </select>
+
+                            </li>
+                            <li class="nav-item ">
+                                Transmission :
+                                <br />
+                                <select name="Tran" id="tran">
+                                    <option value=" " >Choose</option>
+                                    <option value="automanual">Automanual</option>
+                                    <option value="automatic">Automatic</option>
+                                    <option value="cvt">CVT</option>
+                                    <option value="manual">Manual</option>
+                                </select>
+                            </li>
+                            <li class="nav-item">
+                                Brand :
+                                <br />
+                                <select name="Brand" id="brand">
+                                    <option value=" ">Choose</option>
+                                    <option value="acura">Acura</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="bmw">Bmw</option>
+                                    <option value="cadillac">Cadillac</option>
+                                    <option value="dodge">Dodge</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="hyundai">Hyundai</option>
+                                </select>
+                            </li>
+
+                            <li class="nav-item ">
+                                <br />
+                                <button>Filter</button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - CarProject.UI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

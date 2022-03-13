@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CarProject.API", "CarProject.API\CarProject.API.pyproj", "{5712C125-EA65-4EB0-BB40-6F68FD08253A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarProject.UI", "CarProject.UI\CarProject.UI.csproj", "{38757B9B-F49F-4A59-A63A-FDAA4BA4B938}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5712C125-EA65-4EB0-BB40-6F68FD08253A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5712C125-EA65-4EB0-BB40-6F68FD08253A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38757B9B-F49F-4A59-A63A-FDAA4BA4B938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38757B9B-F49F-4A59-A63A-FDAA4BA4B938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38757B9B-F49F-4A59-A63A-FDAA4BA4B938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38757B9B-F49F-4A59-A63A-FDAA4BA4B938}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {080F9AE8-AB64-43BB-B841-6C7E48BC6530}
+	EndGlobalSection
+EndGlobal

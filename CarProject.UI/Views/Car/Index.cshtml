@@ -1,0 +1,29 @@
+﻿@model IEnumerable<CarDTO>
+
+<div class="container">
+    
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="@item.carURL" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.title</h5>
+                        <ul>
+                            <li>Price : @item.price</li>
+                            <li>Color : @item.color</li>
+                            <li>Brand : @item.brand</li>
+                            <li>Year : @item.year</li>
+                            <li>Transmission : @item.transmission</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+
+</div>
