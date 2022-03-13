@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 wsgi_app = app.wsgi_app
 browser = webdriver.Chrome("C:\\Users\\ahmet\\Desktop\\chromedriver")
-str = "asf";
 
 @app.route('/cars')
 def call_cars():
